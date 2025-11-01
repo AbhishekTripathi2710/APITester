@@ -1,8 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const {handleApiRequest} = require("../utils/requestHandler");
+const validateRequest = require("../middleware/validateRequest");
 
-router.post("/test", async (req,res) => {
+router.post("/test",validateRequest, async (req,res) => {
     try{
         const {url, method, headers, body , params} = req.body;
 
