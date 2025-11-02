@@ -26,7 +26,7 @@ const WebSocketTester = () => {
 
     socketRef.current.onopen = () => {
       setIsConnected(true);
-      setMessages((prev) => [...prev, { type: "system", text: "✅ Connected to WebSocket server" }]);
+      setMessages((prev) => [...prev, { type: "system", text: "Connected to WebSocket server" }]);
     };
 
     socketRef.current.onmessage = (event) => {

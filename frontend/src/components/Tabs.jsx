@@ -2,8 +2,8 @@ import React from "react";
 
 const Tabs = ({ activeTab, setActiveTab }) => {
   const tabs = [
-    { name: "REST", icon: "🔗" },
-    { name: "WebSocket", icon: "⚡" }
+    { name: "REST", icon: "" },
+    { name: "WebSocket", icon: "" }
   ];
 
   return (
